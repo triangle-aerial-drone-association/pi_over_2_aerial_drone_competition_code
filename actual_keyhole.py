@@ -24,3 +24,5 @@ drone.sendControlWhile(0,0,0,0,100)
 drone.sendControlWhile(71,-19,0,0,1900)
 drone.land()
 drone.close()
+
+#`1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>??
