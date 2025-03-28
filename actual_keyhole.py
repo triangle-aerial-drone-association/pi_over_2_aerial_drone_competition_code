@@ -14,12 +14,12 @@ drone.set_drone_LED(*colors[detected_color])
 
 drone.takeoff()
 
-drone.sendControlWhile(0,32,0,48,1900)
-drone.sendControlWhile(0,75,0,0,1300)
-drone.sendControlWhile(0,0,0,0,100)
-drone.sendControlWhile(0,0,0,-60,800)
-drone.sendControlWhile(0,0,0,0,100)
-drone.sendControlWhile(71,-19,0,0,1900)
+drone.sendControlWhile(-8,0,0,60,2600)
+drone.sendControlWhile(0,60,0,0,2800)
+drone.sendControlWhile(0,0,0,0,200)
+drone.sendControlWhile(0,0,0,0,600)
+drone.sendControlWhile(0,0,0,0,200)
+drone.sendControlWhile(71,-19,0,0,2100)
 drone.land()
 drone.close()
 
