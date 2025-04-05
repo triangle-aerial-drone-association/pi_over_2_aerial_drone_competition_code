@@ -17,7 +17,6 @@ def pre_flight_preparation(roll_trim,pitch_trim):
         print('Need a freshly charged battery')
         exit(10)
 
-
 def measure_dis(seconds):
     print("----------------Measuring the drone coordinate for",seconds)
     time_sec = seconds
@@ -97,6 +96,7 @@ for point in waypoints:
         print(f"---Flying to {name}: ({x}, {y}, {z})")
         drone.send_absolute_position(x, y, z, fly_sp, 0, 0)
         measure_dis(idle_time)
+        time.sleep(0.5)
 
 prog_time = time.perf_counter() - prog_start_time
 Total_Prog_Time = time.perf_counter() - prog_start_time
