@@ -101,8 +101,10 @@ for point in waypoints:
 prog_time = time.perf_counter() - prog_start_time
 Total_Prog_Time = time.perf_counter() - prog_start_time
 print("=====!!!!!!!===Total Runing Time",Total_Prog_Time)
-
+print(drone.get_battery())
 drone.land()
+time.sleep(10)
+print(drone.get_battery())
 drone.close()
 
 plt.xlim(0, 90)
